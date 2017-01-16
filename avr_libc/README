@@ -1,0 +1,17 @@
+This is a platform implementation for AVR using avr-libc only, without
+any Arduino SW/system libraries.
+
+Add 
+- avr_libc/I2Cdev/I2Cdev.cpp
+- avr_libc/I2Cdev/avr_libc_i2cdev.cpp
+to your project sources.
+
+Also add
+- avr_libc/ardiuno.c
+if you want to use device drivers in the Arduino/ folder.
+
+Notes:
+I2Cdev.cpp is generic (platform independant) parts of I2Cdev.cpp files
+found in other parts of this source tree. As such, there is code duplication: beware 
+of bugs fixed in the other I2Cdev.cpp files!
+
